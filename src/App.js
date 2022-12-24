@@ -129,11 +129,11 @@ function App() {
      
       <Header onClickCart={()=> setCartOpened(true)} /> 
       <div className='banner'>
-        <img src='/img/banner.png' alt='banner'/>
+        <img src='img/banner.png' alt='banner'/>
       </div>
 
 
-      <Route path="/" exact >
+      <Route path='' exact >
         <Home 
           items={items} 
           cartItems={cartItems}
@@ -145,10 +145,10 @@ function App() {
           isLoading={isLoading}
         />
       </Route>
-      <Route path='/favourites' exact>
+      <Route path='favourites' exact>
         <Favourites />
       </Route>
-      <Route path='/orders' exact>
+      <Route path='orders' exact>
         <Orders />
       </Route>
       
